@@ -6,7 +6,6 @@
 ![Proje Görseli](/screenshots/d3.png)
 ![Proje Görseli](/screenshots/d4.png)
 ![Proje Görseli](/screenshots/d5.png)
-![Proje Görseli](/screenshots/d6.png)
 
 ### Responsive Screen (Tablet)
 ![Proje Görseli](/screenshots/t1.png)
@@ -18,6 +17,8 @@
 ![Proje Görseli](/screenshots/r2.png)
 ![Proje Görseli](/screenshots/r3.png)
 ![Proje Görseli](/screenshots/r4.png)
+![Proje Görseli](/screenshots/r5.png)
+
 
 <!-- LİNK -->
 
