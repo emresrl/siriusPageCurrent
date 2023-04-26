@@ -140,7 +140,7 @@
 .navitem1 a {
     text-decoration: none;
     float: left;
-    color: white;
+    color: rgba(255, 255, 255, 0.795);
     padding: 0 0 0 20px;
     flex-direction: column;
     padding-left: 5%;
@@ -156,9 +156,16 @@
 }
 
 .navitem1 ul li a:hover {
-    background-color: white;
-    color: black;
+    border: 1px;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: #091242;
     height: 20px;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
 }
 
 .navitem2 {
@@ -169,7 +176,6 @@
     background-color: rgba(128, 128, 128, 0.479);
     opacity: 1;
     position: relative;
-
 }
 
 .instagramico {
@@ -178,9 +184,12 @@
 }
 
 .instagramico:hover {
-    background-color: black;
-    color: white;
+    background-color:#09124283;
     border-radius: 35%;
+    transition: all 0.25s ease-in;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 .facebookico {
@@ -189,9 +198,12 @@
 }
 
 .facebookico:hover {
-    background-color: black;
-    color: white;
+    background-color:#09124283;
     border-radius: 50%;
+    transition: all 0.25s ease-in;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 .twitterico {
@@ -201,9 +213,12 @@
 }
 
 .twitterico:hover {
-    background-color: black;
-    color: white;
+    background-color:#09124283;
     border-radius: 40%;
+    transition: all 0.25s ease-in;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 .linkedinico {
@@ -212,9 +227,12 @@
 }
 
 .linkedinico:hover {
-    background-color: black;
-    color: white;
+    background-color:#09124283;
     border-radius: 20%;
+    transition: all 0.25s ease-in;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
 }   
 
 .navitem3 {
@@ -253,6 +271,9 @@
     color: white;
     border: 1px;
     border-radius: 2.5%;
+    -webkit-transition: all 0.30s ease-in;
+    -moz-transition: all 0.30s ease-in;
+    transition: all 0.30s ease-in;
 }
 
 .navitem3 button a:hover {
@@ -302,7 +323,7 @@
     width: 100px;
     height: 40px;
     background-color: white;
-    border-radius: 3%;
+    border-radius: 2%;
     border: 0;
 }
 
@@ -320,7 +341,10 @@
     background-color: black;
     color: white;
     cursor: pointer;
-    border-radius: 3%;
+    border-radius: 2%;
+    -webkit-transition: all 0.30s ease-in;
+    -moz-transition: all 0.30s ease-in;
+    transition: all 0.30s ease-in;
 }
 
 /* İnfo */
@@ -340,7 +364,7 @@
     background-color: rgba(0, 0, 0, 0.452);
     opacity: 0.9; 
     background: linear-gradient(to top, rgba(0, 0, 0, 0.829), transparent);
-    top: 12%;
+    top: 11%;
 }
 
 .info2 {
@@ -391,7 +415,7 @@
     color: black;
 }
 
-#infobutton {
+#mybtn {
     position: absolute;
     top: 115%;
     left: -1px;
@@ -408,37 +432,47 @@
     border: 10px;
 }
 
-#infobutton:hover {
+#mybtn:hover {
     background-color: black;
     color: white;
+    -webkit-transition: all 0.40s ease-in;
+    -moz-transition: all 0.40s ease-in;
+    transition: all 0.40s ease-in;
 }
 
-#infobutton:active {
+#mybtn:active {
     transform: translateY(4px);
     background-color: black;
 }
 
-.infocont1 {
+.modal {
     display: none; 
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     /* overflow: auto; */
-    background-color: rgb(0,0,0);
+    /* background-color: rgb(0,0,0); */
     background-color: rgba(0,0,0,0.4);
 }
 
-.infocont1-content {
+@keyframes animatetop {
+    from {top: -200px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.modal-content {
     background-color: #fefefe;
-    margin: 10% auto;
+    margin: 8% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 75%;
     border-radius: 1%;
     box-shadow: 2px 2px rgba(128, 128, 128, 0.459);
+    animation-name: animatetop;
+    animation-duration: 0.6s
 }
 
 .close {
@@ -516,6 +550,9 @@
 #infobutton1:hover {
     background-color: black;
     color: white;
+    -webkit-transition: all 0.40s ease-in;
+    -moz-transition: all 0.40s ease-in;
+    transition: all 0.40s ease-in;
 }
 
 #infobutton1:active {
@@ -544,6 +581,9 @@
     width: 80%;
     border-radius: 1.2%;
     box-shadow: 2px 2px rgba(128, 128, 128, 0.432);
+    animation-name: animatetop;
+    animation-duration: 0.6s
+    
 }
 
 .close1 {
@@ -617,6 +657,9 @@
 #infobutton2:hover {
     background-color: black;
     color: white;
+    -webkit-transition: all 0.40s ease-in;
+    -moz-transition: all 0.40s ease-in;
+    transition: all 0.40s ease-in;
 }
 
 #infobutton2:active {
@@ -635,6 +678,8 @@
     /* overflow: auto; */
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+    animation-name: animatetop;
+    animation-duration: 0.3s
 }
 
 .infocont3-content {
@@ -966,7 +1011,7 @@
     top: 390px;
     background-color: white;
     color: black;
-    border-radius: 2.5%;
+    border-radius: 2%;
     border: 0;
     cursor: pointer;
     display: inline;
@@ -975,7 +1020,10 @@
 .cbtn:hover {
     background-color: black;
     color: white;
-    border-radius: 2.5%;
+    border-radius: 2%;
+    -webkit-transition: all 0.30s ease-in;
+    -moz-transition: all 0.30s ease-in;
+    transition: all 0.30s ease-in;
 }
 
 .cbtn:active {
@@ -1003,6 +1051,7 @@
 }
 
 /* Footer */
+
 }
 
 @media screen and (min-width:1024px) {
@@ -1139,7 +1188,7 @@
 .navitem1 a {
     text-decoration: none;
     float: left;
-    color: white;
+    color: rgba(255, 255, 255, 0.795);
     padding: 0 0 0 20px;
     flex-direction: column;
     padding-left: 5%;
@@ -1155,9 +1204,16 @@
 }
 
 .navitem1 ul li a:hover {
-    background-color: white;
-    color: black;
+    border: 1px;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: #091242;
     height: 20px;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
 }
 
 .navitem2 {
@@ -1168,7 +1224,6 @@
     background-color: rgba(128, 128, 128, 0.479);
     opacity: 1;
     position: relative;
-
 }
 
 .instagramico {
@@ -1177,9 +1232,12 @@
 }
 
 .instagramico:hover {
-    background-color: black;
-    color: white;
+    background-color:#09124283;
     border-radius: 35%;
+    transition: all 0.25s ease-in;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 .facebookico {
@@ -1188,9 +1246,12 @@
 }
 
 .facebookico:hover {
-    background-color: black;
-    color: white;
+    background-color:#09124283;
     border-radius: 50%;
+    transition: all 0.25s ease-in;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 .twitterico {
@@ -1200,9 +1261,12 @@
 }
 
 .twitterico:hover {
-    background-color: black;
-    color: white;
+    background-color:#09124283;
     border-radius: 40%;
+    transition: all 0.25s ease-in;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 .linkedinico {
@@ -1211,9 +1275,12 @@
 }
 
 .linkedinico:hover {
-    background-color: black;
-    color: white;
+    background-color:#09124283;
     border-radius: 20%;
+    transition: all 0.25s ease-in;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
 }   
 
 .navitem3 {
@@ -1252,6 +1319,9 @@
     color: white;
     border: 1px;
     border-radius: 2.5%;
+    -webkit-transition: all 0.30s ease-in;
+    -moz-transition: all 0.30s ease-in;
+    transition: all 0.30s ease-in;
 }
 
 .navitem3 button a:hover {
@@ -1301,7 +1371,7 @@
     width: 100px;
     height: 40px;
     background-color: white;
-    border-radius: 3%;
+    border-radius: 2%;
     border: 0;
 }
 
@@ -1319,7 +1389,10 @@
     background-color: black;
     color: white;
     cursor: pointer;
-    border-radius: 3%;
+    border-radius: 2%;
+    -webkit-transition: all 0.30s ease-in;
+    -moz-transition: all 0.30s ease-in;
+    transition: all 0.30s ease-in;
 }
 
 /* İnfo */
@@ -1339,7 +1412,7 @@
     background-color: rgba(0, 0, 0, 0.452);
     opacity: 0.9; 
     background: linear-gradient(to top, rgba(0, 0, 0, 0.829), transparent);
-    top: 12%;
+    top: 11%;
 }
 
 .info2 {
@@ -1361,7 +1434,7 @@
 
 .left {
     width: 60%;
-    height: 450px;
+    /* height: 450px; */
 }
 
 .lefthead {
@@ -1390,7 +1463,7 @@
     color: black;
 }
 
-#infobutton {
+#mybtn {
     position: absolute;
     top: 115%;
     left: -1px;
@@ -1407,37 +1480,48 @@
     border: 10px;
 }
 
-#infobutton:hover {
+#mybtn:hover {
     background-color: black;
     color: white;
+    -webkit-transition: all 0.40s ease-in;
+    -moz-transition: all 0.40s ease-in;
+    transition: all 0.40s ease-in;
 }
 
-#infobutton:active {
+#mybtn:active {
     transform: translateY(4px);
     background-color: black;
 }
 
-.infocont1 {
+#modal {
     display: none; 
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     /* overflow: auto; */
-    background-color: rgb(0,0,0);
+    /* background-color: rgb(0,0,0); */
     background-color: rgba(0,0,0,0.4);
 }
 
-.infocont1-content {
+@keyframes animatetop {
+    from {top: -200px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.modal-content {
     background-color: #fefefe;
-    margin: 10% auto;
+    margin: 8% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 75%;
     border-radius: 1%;
     box-shadow: 2px 2px rgba(128, 128, 128, 0.459);
+    animation-name: animatetop;
+    animation-duration: 0.6s;
+    z-index: 15;
 }
 
 .close {
@@ -1446,6 +1530,7 @@
     font-size: 28px;
     font-weight: bold;
 }
+
 
 .close:hover,
 .close:focus {
@@ -1515,6 +1600,9 @@
 #infobutton1:hover {
     background-color: black;
     color: white;
+    -webkit-transition: all 0.40s ease-in;
+    -moz-transition: all 0.40s ease-in;
+    transition: all 0.40s ease-in;
 }
 
 #infobutton1:active {
@@ -1543,6 +1631,9 @@
     width: 80%;
     border-radius: 1.2%;
     box-shadow: 2px 2px rgba(128, 128, 128, 0.432);
+    animation-name: animatetop;
+    animation-duration: 0.6s
+    
 }
 
 .close1 {
@@ -1616,6 +1707,9 @@
 #infobutton2:hover {
     background-color: black;
     color: white;
+    -webkit-transition: all 0.40s ease-in;
+    -moz-transition: all 0.40s ease-in;
+    transition: all 0.40s ease-in;
 }
 
 #infobutton2:active {
@@ -1634,6 +1728,8 @@
     /* overflow: auto; */
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+    animation-name: animatetop;
+    animation-duration: 0.3s
 }
 
 .infocont3-content {
@@ -1965,7 +2061,7 @@
     top: 390px;
     background-color: white;
     color: black;
-    border-radius: 2.5%;
+    border-radius: 2%;
     border: 0;
     cursor: pointer;
     display: inline;
@@ -1974,7 +2070,10 @@
 .cbtn:hover {
     background-color: black;
     color: white;
-    border-radius: 2.5%;
+    border-radius: 2%;
+    -webkit-transition: all 0.30s ease-in;
+    -moz-transition: all 0.30s ease-in;
+    transition: all 0.30s ease-in;
 }
 
 .cbtn:active {
@@ -2155,9 +2254,16 @@
 }
 
 .navitem1 ul li a:hover {
-    background-color: white;
-    color: black;
+    border: 1px;
+    border-style: solid;
+    border-top: 0;
+    border-left: 0;
+    border-right: 0;
+    color: #091242;
     height: 20px;
+    -webkit-transition: all 0.25s ease-in;
+    -moz-transition: all 0.25s ease-in;
+    transition: all 0.25s ease-in;
 }
 
 .navitem2 {
@@ -2177,9 +2283,12 @@
 }
 
 .instagramico:hover {
-    background-color: black;
-    color: white;
-    border-radius: 40%;
+    background-color:#09124283;
+    border-radius: 35%;
+    transition: all 0.25s ease-in;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 .facebookico {
@@ -2188,9 +2297,12 @@
 }
 
 .facebookico:hover {
-    background-color: black;
-    color: white;
+    background-color:#09124283;
     border-radius: 50%;
+    transition: all 0.25s ease-in;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 .twitterico {
@@ -2200,9 +2312,12 @@
 }
 
 .twitterico:hover {
-    background-color: black;
-    color: white;
-    border-radius: 35%;
+    background-color:#09124283;
+    border-radius: 40%;
+    transition: all 0.25s ease-in;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1); 
 }
 
 .linkedinico {
@@ -2211,9 +2326,12 @@
 }
 
 .linkedinico:hover {
-    background-color: black;
-    color: white;
+    background-color:#09124283;
     border-radius: 20%;
+    transition: all 0.25s ease-in;
+    -ms-transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
 }   
 
 .navitem3 {
@@ -2235,6 +2353,11 @@
     border: 1px;
     cursor: pointer;
 }
+
+.navitem3 button:active {
+    transform: translateY(4px);
+    background-color: black;
+ }
 
 .navitem3 a {
     text-decoration: none;
@@ -2316,7 +2439,7 @@
     object-fit:fill;
     background-color: black;
     opacity: 2.2; 
-    top: -7%;
+    top: -8%;
 }
 
 .info2 {
@@ -2367,7 +2490,7 @@
     color: black;
 }
 
-#infobutton {
+#mybtn {
     position: absolute;
     top: 105%;
     left: -1px;
@@ -2384,18 +2507,20 @@
     border: 10px;
 }
 
-#infobutton:hover {
+#mybtn:hover {
     background-color: black;
     color: white;
-    border-radius: 2%;
+    -webkit-transition: all 0.40s ease-in;
+    -moz-transition: all 0.40s ease-in;
+    transition: all 0.40s ease-in;
 }
 
-#infobutton:active {
+#mybtn:active {
     transform: translateY(4px);
     background-color: black;
 }
 
-.infocont1 {
+#modal {
     display: none; 
     position: fixed;
     z-index: 1;
@@ -2408,7 +2533,12 @@
     background-color: rgba(0,0,0,0.4);
 }
 
-.infocont1-content {
+@keyframes animatetop {
+    from {top: -200px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.modal-content {
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
@@ -2416,6 +2546,8 @@
     width: 80%;
     border-radius: 1%;
     box-shadow: 2px 2px rgba(128, 128, 128, 0.459);
+    animation-name: animatetop;
+    animation-duration: 0.6s
 }
 
 .close {
@@ -2494,6 +2626,9 @@
     background-color: black;
     color: white;
     border-radius: 2%;
+    -webkit-transition: all 0.40s ease-in;
+    -moz-transition: all 0.40s ease-in;
+    transition: all 0.40s ease-in;
 }
 
 #infobutton1:active {
@@ -2512,6 +2647,8 @@
     /* overflow: auto; */
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+    animation-name: animatetop;
+    animation-duration: 0.3s
 }
 
 .infocont2-content {
@@ -2522,7 +2659,12 @@
     width: 80%;
     border-radius: 1.2%;
     box-shadow: 2px 2px rgba(128, 128, 128, 0.432);
+    animation-name: animatetop;
+    animation-duration: 0.6s
 }
+
+
+
 
 .close1 {
     color: #aaa;
@@ -2595,7 +2737,9 @@
 #infobutton2:hover {
     background-color: black;
     color: white;
-    border-radius: 2%;
+    -webkit-transition: all 0.40s ease-in;
+    -moz-transition: all 0.40s ease-in;
+    transition: all 0.40s ease-in;
 }
 
 #infobutton2:active {
@@ -2614,6 +2758,8 @@
     /* overflow: auto; */
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+    animation-name: animatetop;
+    animation-duration: 0.3s
 }
 
 .infocont3-content {
@@ -2953,14 +3099,16 @@
 .cbtn:hover {
     background-color: black;
     color: white;
+    border-radius: 2%;
+    -webkit-transition: all 0.30s ease-in;
+    -moz-transition: all 0.30s ease-in;
+    transition: all 0.30s ease-in;
 }
 
 .cbtn:active {
     transform: translateY(4px);
     background-color: black;
 }
-
-
 
 /* Contact */
 
@@ -3098,40 +3246,45 @@
     top: -50px;
     font-size: 16px;
     border: none;
-    overflow: hidden;
+    overflow: hidden;  
 }
 
 .dropdown-content {
     display: none;
     position: absolute;
-    background-color:#091242ee;
+    background-color:#091242f6;
     text-align: left;
-    min-width: 100.5%;
+    min-width: 101.2%;
+    height: 225px;
     left: -5px;
     top: 1px;
-    border-top: 3px;
+    border-top: 1px;
     border-bottom: 0px;
     border-right: 0px;
+    border-left: 0px;
     border-color:white;
     border-style: solid;
-    z-index: -150;
-    
+    z-index: -150;  
+    animation-name: navmenu;
+    animation-duration: 1s;
+    animation-direction:normal;
 }
 
 .dropdown-content a {
     color: #fff;
-    padding: 12px 16px;
+    padding: 13px 16px;
     text-decoration: none;
     display: block;
-    border-bottom-style: solid;
+    /* border-bottom-style: solid;
     border-top-style: none;
     border-left-style: none;
-    border-right-style: none;
+    border-right-style: none; */
 }
 
 .dropdown-content a:hover {
     background-color:black;
     color: white;
+    
 }
 
 .dropdown:hover .dropdown-content {
@@ -3141,6 +3294,24 @@
 
 .dropdown:hover .dropbtn {
     background-color:#091242;
+}
+
+@keyframes navmenu {
+    0% {
+      left: 100px;
+    }
+    /* 50% {
+      bottom: 0px;
+    }
+    100% {
+      bottom: 0px;
+    } */
+  }
+
+.teklif {
+    padding-left: 2px;
+    background-color: grey;
+    color: black;
 }
 
 /* Mobile Navbar */
@@ -3185,7 +3356,7 @@
     height: 1500px;
     position: relative;
     display: flex; 
-    top: -80px;
+    top: -90px;
 }
 
 .infopic1 {
@@ -3246,7 +3417,7 @@
     color: black;
 }
 
-#infobutton {
+#mybtn {
     position: absolute;
     top: 105%;
     left: -1px;
@@ -3263,18 +3434,20 @@
     border: 10px;
 }
 
-#infobutton:hover {
+#mybtn:hover {
     background-color: black;
     color: white;
-    border-radius: 2%;
+    -webkit-transition: all 0.40s ease-in;
+    -moz-transition: all 0.40s ease-in;
+    transition: all 0.40s ease-in;
 }
 
-#infobutton:active {
+#mybtn:active {
     transform: translateY(4px);
     background-color: black;
 }
 
-.infocont1 {
+#modal {
     display: none; 
     position: fixed;
     z-index: 1;
@@ -3287,7 +3460,12 @@
     background-color: rgba(0,0,0,0.4);
 }
 
-.infocont1-content {
+@keyframes animatetop {
+    from {top: -200px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+.modal-content {
     background-color: #fefefe;
     margin: 15% auto;
     padding: 20px;
@@ -3295,6 +3473,8 @@
     width: 80%;
     border-radius: 1%;
     box-shadow: 2px 2px rgba(128, 128, 128, 0.459);
+    animation-name: animatetop;
+    animation-duration: 0.6s
 }
 
 .close {
@@ -3373,6 +3553,9 @@
     background-color: black;
     color: white;
     border-radius: 2%;
+    -webkit-transition: all 0.40s ease-in;
+    -moz-transition: all 0.40s ease-in;
+    transition: all 0.40s ease-in;
 }
 
 #infobutton1:active {
@@ -3401,6 +3584,8 @@
     width: 80%;
     border-radius: 1.2%;
     box-shadow: 2px 2px rgba(128, 128, 128, 0.432);
+    animation-name: animatetop;
+    animation-duration: 0.6s
 }
 
 .close1 {
@@ -3474,7 +3659,9 @@
 #infobutton2:hover {
     background-color: black;
     color: white;
-    border-radius: 2%;
+    -webkit-transition: all 0.40s ease-in;
+    -moz-transition: all 0.40s ease-in;
+    transition: all 0.40s ease-in;
 }
 
 #infobutton1:active {
@@ -3493,6 +3680,8 @@
     /* overflow: auto; */
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
+    animation-name: animatetop;
+    animation-duration: 0.3s
 }
 
 .infocont3-content {
@@ -3833,7 +4022,10 @@
 .cbtn:hover {
     background-color: black;
     color: white;
-    border-radius: 3%;
+    border-radius: 2%;
+    -webkit-transition: all 0.30s ease-in;
+    -moz-transition: all 0.30s ease-in;
+    transition: all 0.30s ease-in;
 }
 
 .cbtn:active {
@@ -3849,7 +4041,7 @@
 
 #footermain {
     width: 100%;
-    height: 55px;
+    height: 53px;
     background-color:#091242;
     display: flex;
     flex-direction: column;
@@ -3860,6 +4052,7 @@
 .footprg {
     color: white;
     font-size: small;
+    margin-top: 5px;
 }
 
 /* Footer */
