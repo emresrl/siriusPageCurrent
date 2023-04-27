@@ -285,7 +285,7 @@
 
 /* Mobile Navbar */
 
-.dropdown {
+.mobile-container {
     display: none;
 }
 
@@ -415,310 +415,407 @@
     color: black;
 }
 
-#mybtn {
-    position: absolute;
-    top: 115%;
-    left: -1px;
-    color: white;
-    width: 100px;
-    height: 30px;
-    border: 1;
-    border-style: solid;
-    cursor: pointer;
-    border-style: solid;
-    border-color: grey;
-    background-color:#091242;
-    border-radius: 2%;
-    border: 10px;
-}
-
-#mybtn:hover {
-    background-color: black;
-    color: white;
-    -webkit-transition: all 0.40s ease-in;
-    -moz-transition: all 0.40s ease-in;
-    transition: all 0.40s ease-in;
-}
-
-#mybtn:active {
-    transform: translateY(4px);
-    background-color: black;
-}
-
 .modal {
-    display: none; 
     position: fixed;
-    z-index: 5;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    /* overflow: auto; */
-    /* background-color: rgb(0,0,0); */
-    background-color: rgba(0,0,0,0.4);
-}
-
-@keyframes animatetop {
-    from {top: -200px; opacity: 0}
-    to {top: 0; opacity: 1}
-}
-
-.modal-content {
-    background-color: #fefefe;
-    margin: 8% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 75%;
-    border-radius: 1%;
-    box-shadow: 2px 2px rgba(128, 128, 128, 0.459);
-    animation-name: animatetop;
-    animation-duration: 0.6s
-}
-
-.close {
-    color: #aaa;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 9999;
+  }
+  
+  .close-button {
     float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close:hover,
-.close:focus {
-    color: black;
-    text-decoration: none;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
     cursor: pointer;
-}
-
-.lefthead1 {
-    border:#091242;
-    border-style: solid;
-    border-top: 0;
-    border-bottom: 0;
-    border-right: 0;
-    font-weight: bold;
-    padding-left: 2px;
-}
-
-.infocontent1 {
-    margin-top: 2%;
-}
-
-.color {
-    color:#091242;
-}
-
-.lefthead2 {
-    position: absolute;
-    margin-top: 50px;
-    font-size: large;
-    border: #091242;
-    border-style: solid;
-    border-top: 0;
-    border-bottom: 0;
-    border-right: 0;
-    width: 50px;
-    left: 5%;
-    top: 30%;
-    text-align: justify;
-    padding-left: 2px;
-}
-
-.leftprg2 {
-    position: absolute;
-    top: 42%;
-    width: 50%;
-    left: 5%;
-}
-
-#infobutton1 {
-    position: absolute;
-    top: 58%;
-    left: 5%;
-    color: white;
-    width: 100px;
-    height: 4%;
-    border: 1;
-    border-style: solid;
-    cursor: pointer;
-    border-style: solid;
-    border-color: grey;
-    background-color:#091242;
-    border-radius: 2%;
-    border: 10px;
-}
-
-#infobutton1:hover {
-    background-color: black;
-    color: white;
-    -webkit-transition: all 0.40s ease-in;
-    -moz-transition: all 0.40s ease-in;
-    transition: all 0.40s ease-in;
-}
-
-#infobutton1:active {
-    transform: translateY(4px);
-    background-color: black;
-}
-
-.infocont2 {
-    display: none; 
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    /* overflow: auto; */
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-}
-
-.infocont2-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    border-radius: 1.2%;
-    box-shadow: 2px 2px rgba(128, 128, 128, 0.432);
-    animation-name: animatetop;
-    animation-duration: 0.6s
+    border-radius: 0.25rem;
+    background-color: lightgray;
+  }
+  .close-button:hover {
+    background-color: darkgray;
+  }
+  
+  .modaltwo {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(1.1);
+      transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+      z-index: 9999;
+    }
     
-}
-
-.close1 {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close1:hover,
-.close1:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.lefthead3 {
-    border:#091242;
-    border-style: solid;
-    border-top: 0;
-    border-bottom: 0;
-    border-right: 0;
-    padding-left: 2px;
-}
-
-.leftprg3 {
-    margin-top: 2%;
-}
-
-.lefthead4 {
-    position: absolute;
-    margin-top: 50px;
-    font-size: large;
-    border: #091242;
-    border-style: solid;
-    border-top: 0;
-    border-bottom: 0;
-    border-right: 0;
-    width: 50px;
-    left: 5%;
-    top: 59%;
-    text-align: justify;
-    padding-left: 2px;
-    padding-left: 2px;
-}
-
-.leftprg4 {
-    position: absolute;
-    top: 72%;
-    width: 50%;
-    left: 5%;
-}
-
-#infobutton2 {
-    position: absolute;
-    top: 92%;
-    left: 5%;
-    color: white;
-    width: 100px;
-    height: 4%;
-    border: 1;
-    border-style: solid;
-    cursor: pointer;
-    border-style: solid;
-    border-color: grey;
-    background-color:#091242;
-    border-radius: 2%;
-    border: 10px;
-}
-
-#infobutton2:hover {
-    background-color: black;
-    color: white;
-    -webkit-transition: all 0.40s ease-in;
-    -moz-transition: all 0.40s ease-in;
-    transition: all 0.40s ease-in;
-}
-
-#infobutton2:active {
-    transform: translateY(4px);
-    background-color: black;
-}
-
-.infocont3 {
-    display: none; 
-    position: fixed;
-    z-index: 1;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    /* overflow: auto; */
-    background-color: rgb(0,0,0);
-    background-color: rgba(0,0,0,0.4);
-    animation-name: animatetop;
-    animation-duration: 0.3s
-}
-
-.infocont3-content {
-    background-color: #fefefe;
-    margin: 15% auto;
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%;
-    border-radius: 1%;
-    box-shadow: 2px 2px rgba(128, 128, 128, 0.466);
-}
-
-.close2 {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.close2:hover,
-.close2:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-.lefthead5 {
-    border:#091242;
-    border-style: solid;
-    border-top: 0;
-    border-bottom: 0;
-    border-right: 0;
-    padding-left: 2px;
-}
-
-.leftprg5 {
-    margin-top: 2%;
-    left: 5%;
-}
+    .closeModal {
+      float: right;
+      width: 1.5rem;
+      line-height: 1.5rem;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 0.25rem;
+      background-color: lightgray;
+    }
+    .closeModal:hover {
+      background-color: darkgray;
+    }
+  
+    .modalthre {
+      position: fixed;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+      opacity: 0;
+      visibility: hidden;
+      transform: scale(1.1);
+      transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+      z-index: 9999;
+    }
+    
+    .closeModalthre {
+      float: right;
+      width: 1.5rem;
+      line-height: 1.5rem;
+      text-align: center;
+      cursor: pointer;
+      border-radius: 0.25rem;
+      background-color: lightgray;
+    }
+    .closeModalthre:hover {
+      background-color: darkgray;
+    }
+  
+  .show-modal {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  }
+  
+  .show-modal2 {
+      opacity: 1;
+      visibility: visible;
+      transform: scale(1.0);
+      transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+    }
+  
+  #mybtn {
+      position: absolute;
+      top: 115%;
+      left: -1px;
+      color: white;
+      width: 100px;
+      height: 30px;
+      border: 1;
+      border-style: solid;
+      cursor: pointer;
+      border-style: solid;
+      border-color: grey;
+      background-color:#091242;
+      border-radius: 2%;
+      border: 10px;
+  }
+  
+  #mybtn:hover {
+      background-color: black;
+      color: white;
+      -webkit-transition: all 0.40s ease-in;
+      -moz-transition: all 0.40s ease-in;
+      transition: all 0.40s ease-in;
+  }
+  
+  #mybtn:active {
+      transform: translateY(4px);
+      background-color: black;
+  }
+  
+  #modal {
+      display: none; 
+      position: fixed;
+      z-index: 5;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      /* overflow: auto; */
+      /* background-color: rgb(0,0,0); */
+      background-color: rgba(0,0,0,0.4);
+  }
+  
+  @keyframes animatetop {
+      from {top: -200px; opacity: 0}
+      to {top: 0; opacity: 1}
+  }
+  
+  .modal-content {
+      background-color: #fefefe;
+      margin: 8% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 75%;
+      border-radius: 1%;
+      box-shadow: 2px 2px rgba(128, 128, 128, 0.459);
+      animation-name: animatetop;
+      animation-duration: 0.6s;
+      z-index: 15;
+  }
+  
+  .close {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+  
+  
+  .close:hover,
+  .close:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  .lefthead1 {
+      border:#091242;
+      border-style: solid;
+      border-top: 0;
+      border-bottom: 0;
+      border-right: 0;
+      font-weight: bold;
+      padding-left: 2px;
+  }
+  
+  .infocontent1 {
+      margin-top: 2%;
+  }
+  
+  .color {
+      color:#091242;
+  }
+  
+  .lefthead2 {
+      position: absolute;
+      margin-top: 50px;
+      font-size: large;
+      border: #091242;
+      border-style: solid;
+      border-top: 0;
+      border-bottom: 0;
+      border-right: 0;
+      width: 50px;
+      left: 5%;
+      top: 30%;
+      text-align: justify;
+      padding-left: 2px;
+  }
+  
+  .leftprg2 {
+      position: absolute;
+      top: 42%;
+      width: 50%;
+      left: 5%;
+  }
+  
+  #infobutton1 {
+      position: absolute;
+      top: 58%;
+      left: 5%;
+      color: white;
+      width: 100px;
+      height: 4%;
+      border: 1;
+      border-style: solid;
+      cursor: pointer;
+      border-style: solid;
+      border-color: grey;
+      background-color:#091242;
+      border-radius: 2%;
+      border: 10px;
+  }
+  
+  #infobutton1:hover {
+      background-color: black;
+      color: white;
+      -webkit-transition: all 0.40s ease-in;
+      -moz-transition: all 0.40s ease-in;
+      transition: all 0.40s ease-in;
+  }
+  
+  #infobutton1:active {
+      transform: translateY(4px);
+      background-color: black;
+  }
+  
+  .infocont2 {
+      display: none; 
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      /* overflow: auto; */
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.4);
+  }
+  
+  .infocont2-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      border-radius: 1.2%;
+      box-shadow: 2px 2px rgba(128, 128, 128, 0.432);
+      animation-name: animatetop;
+      animation-duration: 0.6s
+      
+  }
+  
+  .close1 {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+  
+  .close1:hover,
+  .close1:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  .lefthead3 {
+      border:#091242;
+      border-style: solid;
+      border-top: 0;
+      border-bottom: 0;
+      border-right: 0;
+      padding-left: 2px;
+  }
+  
+  .leftprg3 {
+      margin-top: 2%;
+  }
+  
+  .lefthead4 {
+      position: absolute;
+      margin-top: 50px;
+      font-size: large;
+      border: #091242;
+      border-style: solid;
+      border-top: 0;
+      border-bottom: 0;
+      border-right: 0;
+      width: 50px;
+      left: 5%;
+      top: 59%;
+      text-align: justify;
+      padding-left: 2px;
+      padding-left: 2px;
+  }
+  
+  .leftprg4 {
+      position: absolute;
+      top: 72%;
+      width: 50%;
+      left: 5%;
+  }
+  
+  #infobutton2 {
+      position: absolute;
+      top: 92%;
+      left: 5%;
+      color: white;
+      width: 100px;
+      height: 4%;
+      border: 1;
+      border-style: solid;
+      cursor: pointer;
+      border-style: solid;
+      border-color: grey;
+      background-color:#091242;
+      border-radius: 2%;
+      border: 10px;
+  }
+  
+  #infobutton2:hover {
+      background-color: black;
+      color: white;
+      -webkit-transition: all 0.40s ease-in;
+      -moz-transition: all 0.40s ease-in;
+      transition: all 0.40s ease-in;
+  }
+  
+  #infobutton2:active {
+      transform: translateY(4px);
+      background-color: black;
+  }
+  
+  .infocont3 {
+      display: none; 
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      /* overflow: auto; */
+      background-color: rgb(0,0,0);
+      background-color: rgba(0,0,0,0.4);
+      animation-name: animatetop;
+      animation-duration: 0.3s
+  }
+  
+  .infocont3-content {
+      background-color: #fefefe;
+      margin: 15% auto;
+      padding: 20px;
+      border: 1px solid #888;
+      width: 80%;
+      border-radius: 1%;
+      box-shadow: 2px 2px rgba(128, 128, 128, 0.466);
+  }
+  
+  .close2 {
+      color: #aaa;
+      float: right;
+      font-size: 28px;
+      font-weight: bold;
+  }
+  
+  .close2:hover,
+  .close2:focus {
+      color: black;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  
+  .lefthead5 {
+      border:#091242;
+      border-style: solid;
+      border-top: 0;
+      border-bottom: 0;
+      border-right: 0;
+      padding-left: 2px;
+  }
+  
+  .leftprg5 {
+      margin-top: 2%;
+      left: 5%;
+  }
 
 .rigth {
     width: 40%;
@@ -1180,7 +1277,7 @@
 }
 
 .navitem1 ul {
-    margin-left: 33%;
+    padding-left: 33%;
     margin-top: 1.5%;
     z-index: 20;
 }
@@ -1262,7 +1359,7 @@
 
 .twitterico:hover {
     background-color:#09124283;
-    border-radius: 40%;
+    border-radius: 20%;
     transition: all 0.25s ease-in;
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -1276,7 +1373,7 @@
 
 .linkedinico:hover {
     background-color:#09124283;
-    border-radius: 20%;
+    border-radius: 15%;
     transition: all 0.25s ease-in;
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -1333,7 +1430,7 @@
 
 /* Mobile Navbar */
 
-.dropdown {
+.mobile-container {
     display: none;
 }
 
@@ -1463,6 +1560,102 @@
     color: black;
 }
 
+
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 9999;
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.modaltwo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 9999;
+  }
+  
+  .closeModal {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+  }
+  .closeModal:hover {
+    background-color: darkgray;
+  }
+
+  .modalthre {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 9999;
+  }
+  
+  .closeModalthre {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+  }
+  .closeModalthre:hover {
+    background-color: darkgray;
+  }
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.show-modal2 {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  }
+
 #mybtn {
     position: absolute;
     top: 115%;
@@ -1513,10 +1706,12 @@
 
 .modal-content {
     background-color: #fefefe;
-    margin: 8% auto;
+    margin: auto;
+    margin-top: auto;
     padding: 20px;
     border: 1px solid #888;
     width: 75%;
+    margin-top: 7%;
     border-radius: 1%;
     box-shadow: 2px 2px rgba(128, 128, 128, 0.459);
     animation-name: animatetop;
@@ -1625,7 +1820,7 @@
 
 .infocont2-content {
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: 28% auto;
     padding: 20px;
     border: 1px solid #888;
     width: 80%;
@@ -1802,7 +1997,6 @@
     object-fit: cover;
     border-radius: 2%;
 }
-
 /* İnfo */
 
 /* Blog */
@@ -2313,7 +2507,7 @@
 
 .twitterico:hover {
     background-color:#09124283;
-    border-radius: 40%;
+    border-radius: 20%;
     transition: all 0.25s ease-in;
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -2327,7 +2521,7 @@
 
 .linkedinico:hover {
     background-color:#09124283;
-    border-radius: 20%;
+    border-radius: 15%;
     transition: all 0.25s ease-in;
     -ms-transform: scale(1.1);
     -webkit-transform: scale(1.1);
@@ -2384,7 +2578,7 @@
 
 /* Mobile Navbar */
 
-.dropdown {
+.mobile-container {
     display: none;
 }
 
@@ -2490,9 +2684,104 @@
     color: black;
 }
 
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 9999;
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.modaltwo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 9999;
+  }
+  
+  .closeModal {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+  }
+  .closeModal:hover {
+    background-color: darkgray;
+  }
+
+  .modalthre {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 9999;
+  }
+  
+  .closeModalthre {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+  }
+  .closeModalthre:hover {
+    background-color: darkgray;
+  }
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.show-modal2 {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  }
+
 #mybtn {
     position: absolute;
-    top: 105%;
+    top: 108%;
     left: -1px;
     color: white;
     width: 100px;
@@ -2523,13 +2812,13 @@
 #modal {
     display: none; 
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
     /* overflow: auto; */
-    background-color: rgb(0,0,0);
+    /* background-color: rgb(0,0,0); */
     background-color: rgba(0,0,0,0.4);
 }
 
@@ -2540,14 +2829,16 @@
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: 8% auto;
     padding: 20px;
+    margin-top: 20%;
     border: 1px solid #888;
-    width: 80%;
+    width: 75%;
     border-radius: 1%;
     box-shadow: 2px 2px rgba(128, 128, 128, 0.459);
     animation-name: animatetop;
-    animation-duration: 0.6s
+    animation-duration: 0.6s;
+    z-index: 15;
 }
 
 .close {
@@ -2556,6 +2847,7 @@
     font-size: 28px;
     font-weight: bold;
 }
+
 
 .close:hover,
 .close:focus {
@@ -2607,7 +2899,7 @@
 
 #infobutton1 {
     position: absolute;
-    top: 59%;
+    top: 62%;
     left: 5%;
     color: white;
     width: 100px;
@@ -2625,7 +2917,6 @@
 #infobutton1:hover {
     background-color: black;
     color: white;
-    border-radius: 2%;
     -webkit-transition: all 0.40s ease-in;
     -moz-transition: all 0.40s ease-in;
     transition: all 0.40s ease-in;
@@ -2647,8 +2938,6 @@
     /* overflow: auto; */
     background-color: rgb(0,0,0);
     background-color: rgba(0,0,0,0.4);
-    animation-name: animatetop;
-    animation-duration: 0.3s
 }
 
 .infocont2-content {
@@ -2661,10 +2950,8 @@
     box-shadow: 2px 2px rgba(128, 128, 128, 0.432);
     animation-name: animatetop;
     animation-duration: 0.6s
+    
 }
-
-
-
 
 .close1 {
     color: #aaa;
@@ -2927,7 +3214,7 @@
 
 .contact1prg {
     position: absolute;
-    top: 25%;
+    top: 24%;
     left: 13%;
     font-size: x-large;
     font-weight: bolder;
@@ -2936,7 +3223,7 @@
 
 .contact1prg1 {
     position: absolute;
-    top: 35%;
+    top: 33%;
     left: 13%;
     color: grey;
     width: 29%;
@@ -3137,32 +3424,7 @@
 /* Header */
 
 #headermain {
-    width: 100%;
-    height: 80px;
-    background-color: #091242;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;  
-}
-
-.headerlogomain {
-    width: 50%;
-    height: 80px;
-}
-
-.headerlogo {
-    position: absolute;
-    width: 100px;
-    height: 40px;
-    padding-left: 10%;
-    top: 18px;
-}
-
-.headerlogomain1 {
-    height: 80px;
-    width: 100%;
-    display: inline-block;
+    display: none;
 }
 
 .item1 {
@@ -3196,7 +3458,7 @@
     background-image: url(./assets/topic.jpg);
     background-size: cover;
     background-repeat: no-repeat;
-    z-index: 5;
+    z-index: 1;
 }
 
 .background {
@@ -3234,85 +3496,64 @@
 
 /* Mobile Navbar */
 
-.dropdown {
-    position: relative;
-}
-
-.dropbtn {
-    background-color:#091242 ;
+.mobile-container {
+    width: 100%;
+    margin: auto;
+    background-color: white;
     color: white;
-    position: absolute;
-    left: 85%;
-    top: -50px;
-    font-size: 16px;
-    border: none;
-    overflow: hidden;  
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color:#091242f6;
-    text-align: left;
-    min-width: 101.2%;
-    height: 225px;
-    left: -5px;
-    top: 1px;
-    border-top: 1px;
-    border-bottom: 0px;
-    border-right: 0px;
-    border-left: 0px;
-    border-color:white;
-    border-style: solid;
-    z-index: -150;  
-    animation-name: navmenu;
-    animation-duration: 1s;
-    animation-direction:normal;
-}
-
-.dropdown-content a {
-    color: #fff;
-    padding: 13px 16px;
-    text-decoration: none;
-    display: block;
-    /* border-bottom-style: solid;
-    border-top-style: none;
-    border-left-style: none;
-    border-right-style: none; */
-}
-
-.dropdown-content a:hover {
-    background-color:black;
-    color: white;
-    
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-    z-index: 50;
-}
-
-.dropdown:hover .dropbtn {
-    background-color:#091242;
-}
-
-@keyframes navmenu {
-    0% {
-      left: 100px;
-    }
-    /* 50% {
-      bottom: 0px;
-    }
-    100% {
-      bottom: 0px;
-    } */
+    border-radius: 10px;
+    z-index: 20;
   }
 
-.teklif {
-    padding-left: 2px;
-    background-color: grey;
+  .logo {
+    width: 80px;
+    height: 30px;
+  }
+  
+  .topnav {
+    overflow: hidden;
+    background-color:#091242;
+    z-index: 35;
+  }
+
+  .topnav #Links {
+    display: none;
+  }
+  
+  .topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 19px;
+    display: block;
+    z-index: 15px;
+    
+    
+  }
+  
+  .topnav a.icon {
+    background-color: #09124296;
+    display: block;
+    position: absolute;
+    right: 2%;
+    top: 1%;
+
+  }
+  
+  .topnav a:hover {
+    background-color:#091242;
+    color: white;
+  }
+  
+  .active {
+    background-color:#091242;
     color: black;
-}
+  }
+
+  .teklif {
+    background-color: black;
+    color: white;
+  }
 
 /* Mobile Navbar */
 
@@ -3417,9 +3658,105 @@
     color: black;
 }
 
+.modal {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  transform: scale(1.1);
+  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  z-index: 9999;
+  overflow: auto;
+}
+
+.close-button {
+  float: right;
+  width: 1.5rem;
+  line-height: 1.5rem;
+  text-align: center;
+  cursor: pointer;
+  border-radius: 0.25rem;
+  background-color: lightgray;
+}
+.close-button:hover {
+  background-color: darkgray;
+}
+
+.modaltwo {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 9999;
+  }
+  
+  .closeModal {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+  }
+  .closeModal:hover {
+    background-color: darkgray;
+  }
+
+  .modalthre {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    opacity: 0;
+    visibility: hidden;
+    transform: scale(1.1);
+    transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+    z-index: 9999;
+  }
+  
+  .closeModalthre {
+    float: right;
+    width: 1.5rem;
+    line-height: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 0.25rem;
+    background-color: lightgray;
+  }
+  .closeModalthre:hover {
+    background-color: darkgray;
+  }
+
+.show-modal {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1.0);
+  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+}
+
+.show-modal2 {
+    opacity: 1;
+    visibility: visible;
+    transform: scale(1.0);
+    transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  }
+
 #mybtn {
     position: absolute;
-    top: 105%;
+    top: 115%;
     left: -1px;
     color: white;
     width: 100px;
@@ -3450,13 +3787,13 @@
 #modal {
     display: none; 
     position: fixed;
-    z-index: 1;
+    z-index: 5;
     left: 0;
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto;
-    background-color: rgb(0,0,0);
+    /* overflow: auto; */
+    /* background-color: rgb(0,0,0); */
     background-color: rgba(0,0,0,0.4);
 }
 
@@ -3467,14 +3804,15 @@
 
 .modal-content {
     background-color: #fefefe;
-    margin: 15% auto;
+    margin: 8% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 75%;
     border-radius: 1%;
     box-shadow: 2px 2px rgba(128, 128, 128, 0.459);
     animation-name: animatetop;
-    animation-duration: 0.6s
+    animation-duration: 0.6s;
+    z-index: 15;
 }
 
 .close {
@@ -3483,6 +3821,7 @@
     font-size: 28px;
     font-weight: bold;
 }
+
 
 .close:hover,
 .close:focus {
@@ -3511,7 +3850,7 @@
 
 .lefthead2 {
     position: absolute;
-    margin-top: 50px;
+    margin-top: -70px;
     font-size: large;
     border: #091242;
     border-style: solid;
@@ -3520,21 +3859,21 @@
     border-right: 0;
     width: 50px;
     left: 5%;
-    top: 20%;
+    top: 30%;
     text-align: justify;
     padding-left: 2px;
 }
 
 .leftprg2 {
     position: absolute;
-    top: 27%;
+    top: 28%;
     width: 90%;
     left: 5%;
 }
 
 #infobutton1 {
     position: absolute;
-    top: 37%;
+    top: 39%;
     left: 5%;
     color: white;
     width: 100px;
@@ -3552,7 +3891,6 @@
 #infobutton1:hover {
     background-color: black;
     color: white;
-    border-radius: 2%;
     -webkit-transition: all 0.40s ease-in;
     -moz-transition: all 0.40s ease-in;
     transition: all 0.40s ease-in;
@@ -3586,6 +3924,7 @@
     box-shadow: 2px 2px rgba(128, 128, 128, 0.432);
     animation-name: animatetop;
     animation-duration: 0.6s
+    
 }
 
 .close1 {
@@ -3617,7 +3956,7 @@
 
 .lefthead4 {
     position: absolute;
-    margin-top: 50px;
+    margin-top: -250px;
     font-size: large;
     border: #091242;
     border-style: solid;
@@ -3626,7 +3965,7 @@
     border-right: 0;
     width: 50px;
     left: 5%;
-    top: 38%;
+    top: 59%;
     text-align: justify;
     padding-left: 2px;
     padding-left: 2px;
@@ -3664,7 +4003,7 @@
     transition: all 0.40s ease-in;
 }
 
-#infobutton1:active {
+#infobutton2:active {
     transform: translateY(4px);
     background-color: black;
 }

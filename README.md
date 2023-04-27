@@ -1,23 +1,23 @@
 ## Sirius Tedarik Web Page
 
 ### Desktop Screen
-![Proje Görseli](/screenshots/d11.png)
-![Proje Görseli](/screenshots/d22.png)
-![Proje Görseli](/screenshots/d33.png)
-![Proje Görseli](/screenshots/d44.png)
-![Proje Görseli](/screenshots/d55.png)
+![Proje Görseli](/screenshots/d1.png)
+![Proje Görseli](/screenshots/d2.png)
+![Proje Görseli](/screenshots/d3.png)
+![Proje Görseli](/screenshots/d4.png)
+![Proje Görseli](/screenshots/d5.png)
 
 ### Responsive Screen (Tablet)
-![Proje Görseli](/screenshots/t11.png)
-![Proje Görseli](/screenshots/t22.png)
-![Proje Görseli](/screenshots/t33.png)
+![Proje Görseli](/screenshots/t1.png)
+![Proje Görseli](/screenshots/t2.png)
+![Proje Görseli](/screenshots/t3.png)
 
 ### Responsive Screen (Phone)
-![Proje Görseli](/screenshots/r11.png)
-![Proje Görseli](/screenshots/r22.png)
-![Proje Görseli](/screenshots/r33.png)
-![Proje Görseli](/screenshots/r44.png)
-![Proje Görseli](/screenshots/r55.png)
+![Proje Görseli](/screenshots/r1.png)
+![Proje Görseli](/screenshots/r2.png)
+![Proje Görseli](/screenshots/r3.png)
+![Proje Görseli](/screenshots/r4.png)
+![Proje Görseli](/screenshots/r5.png)
 
 
 <!-- LİNK -->
